@@ -1,0 +1,461 @@
+
+*,
+a,
+p {
+    text-decoration: none;
+    transition: 0.3s;
+    color: #efefef;
+    user-select: none;
+    font-family: 'MiSans', sans-serif;
+}
+/*背景*/
+.bg-all {
+    z-index: 0;
+    position: absolute;
+    top: calc(0px + 0px);
+    left: 0;
+    width: 100%;
+    height: calc(100% - 0px);
+    transition: .25s;
+}
+
+#bg {
+    transform: scale(1);
+    
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s, transform .25s, filter .25s;
+    backface-visibility: hidden;
+}
+.cover {
+    opacity: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .5) 100%), radial-gradient(rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, .3) 166%);
+    transition: .25s;
+}
+.icons{
+    position: absolute;
+    left: 300px;
+    top: 240px;
+    display: flex;
+}
+
+.imgs img:first{
+    width: 120px;
+    border-radius: 50%;
+}
+.introduction{
+    background: rgb(0 0 0 / 25%);
+    backdrop-filter: blur(10px);
+    /*margin: 0.5rem;*/
+    padding: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.intro{
+    position: absolute;
+    left: 300px;
+    top:500px;
+}
+.intro_container{
+    margin:20px 10px;
+    font-size: 1.1rem;
+    width: 300px;
+    font-size: 22px;
+    
+}
+.intro_content1{
+    color: aqua;
+}
+.intro_content2{
+    display: block;
+    margin-top: 5px;
+    color: aqua;
+}
+
+
+.about{
+    position: absolute;
+    display: flex;
+    top:650px;
+    left: 300px;
+    align-items: center;
+}
+.about i{
+    font-size: 2.5rem;
+    margin: 0px 20px;
+}
+/* 右侧信息部分 */
+.infor{
+    position: absolute;
+    display: flex;
+    top: 180px;
+    left: 1000px;
+    
+}
+.infor .onetalk{
+    width: 320px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 17.6px;
+}
+.infor .onetalk .onetalk_author{
+    align-self: flex-end;
+    color: aqua;
+    margin-top: 20px;
+}
+#onetalk_cont{
+    background-image: -webkit-linear-gradient(left,green,yellow,pink, blue, red 25%,green 35%,
+    blue 50%,yellow 60%, red 75%, pink 85%,blue 100%);   
+    -webkit-text-fill-color: transparent;    
+    -webkit-background-clip: text; 
+    animation: stream 15s infinite linear;   
+    background-size: 200% 100%;
+}
+#onetalk_auth{
+    background-image: -webkit-linear-gradient(left,green,yellow,pink, blue, red 25%,green 35%,
+    blue 50%,yellow 60%, red 75%, pink 85%,blue 100%);   
+    -webkit-text-fill-color: transparent;    
+    -webkit-background-clip: text; 
+    animation: stream 15s infinite linear;   
+    background-size: 200% 100%;
+}
+.infor .times{
+    width: 320px;
+    height: 160px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.mass{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 600px;
+    top: 500px;
+    left: 1000px;
+}
+.mass .first_row{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.mass .second_row{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 24px;
+}
+.item{
+    width: 150px;
+    height: 75px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 17.6px;
+}
+.mass span{
+    margin-left: 5px;
+}
+/* 音乐 */
+.mus{
+    width: 0;
+    z-index: 999;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top:0;
+    transition:all 0.5s;
+    background-color: transparent;
+}
+.showMus{
+    width: 20% !important;
+}
+/*Aplayer*/
+
+
+.aplayer {
+    background: rgb(0 0 0 / 25%) !important;
+    width: 100%;
+    border-radius: 6px !important;
+    margin-right: 18px;
+}
+/* .aplayer.aplayer-withlrc .aplayer-pic {
+    display: none;
+} */
+
+.aplayer.aplayer-withlrc .aplayer-info {
+    margin-left: 0px !important;
+}
+
+.aplayer.aplayer-withlrc .aplayer-info {
+    background-color: #ffffff26;
+    border-radius: 6px;
+}
+
+/*歌曲名称*/
+.aplayer .aplayer-info .aplayer-music .aplayer-title {
+    font-size: 16px !important;
+}
+
+/*音乐列表*/
+.aplayer.aplayer-withlist .aplayer-list {
+    margin-top: 6px;
+}
+
+.aplayer .aplayer-list ol li.aplayer-list-light {
+    background: #ffffff26 !important;
+    border-radius: 6px !important;
+}
+
+.aplayer .aplayer-list ol li:hover {
+    background: #ffffff26 !important;
+    border-radius: 6px !important;
+}
+
+.aplayer .aplayer-list ol li {
+    border-top: 1px solid transparent !important;
+}
+
+.aplayer.aplayer-withlist .aplayer-info {
+    border-bottom: 1px solid transparent !important;
+}
+
+.aplayer-list-cur {
+    background-color: #eeeeee !important;
+}
+
+/*控制面板 - Bug*/
+/* .aplayer .aplayer-info .aplayer-controller {
+    display: none !important;
+} */
+
+/*歌词间距*/
+.aplayer .aplayer-lrc {
+    margin: 4px 0 0px !important;
+    height: 34px !important;
+}
+
+.aplayer .aplayer-lrc {
+    text-align: left !important;
+    margin-left: 5px !important;
+}
+
+/*歌词大小*/
+.aplayer .aplayer-lrc p.aplayer-lrc-current {
+    font-size: 15px !important;
+}
+
+/*全局字体颜色*/
+.aplayer .aplayer-info .aplayer-music .aplayer-title,
+.aplayer .aplayer-info .aplayer-music .aplayer-author,
+.aplayer .aplayer-lrc p,
+span.aplayer-list-title,
+span.aplayer-list-author,
+span.aplayer-list-index {
+    color: white !important;
+}
+
+/*全局背景*/
+.aplayer .aplayer-lrc:after,
+.aplayer .aplayer-lrc:before {
+    background: transparent !important;
+}
+/* end aplayer */
+
+/* 说说 */
+.com{
+    width:46%;
+    z-index: 1000;
+    display: none;
+    position: fixed;
+    height: 82%;
+    right: 4%;
+    background: rgb(0 0 0 / 25%);
+    backdrop-filter: blur(10px);
+    top: 7%;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: auto;
+    
+}
+.com_show{
+    display: block !important;
+}
+.content_more{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.content_all{
+    margin-top: 10px;
+    width: 100%;
+    border-style: solid;
+    border-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    
+}
+.content_time{
+    align-self: flex-end;
+}
+.com_close{
+    top: 4px;
+    right:8px;
+    font-size: 1.45rem;
+    cursor: pointer;
+    position: relative;
+}
+.com_in{
+    position: fixed;
+    bottom: 5px;
+    background-color: transparent;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 8px;
+    z-index: 1030;
+}
+.com_input{
+    border-radius: 10px;
+    width: 100%;
+    color: rgb(149, 0, 255);
+}
+.com_input_but{
+    margin-left: 20px;
+   width: auto;
+}
+/* 选择器 */
+.choices{
+    width:20%;
+    z-index: 1000;
+    display: none;
+    position: fixed;
+    height: 20%;
+    right: 40%;
+    background: rgb(0 0 0 / 25%);
+    backdrop-filter: blur(10px);
+    top: 7%;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: auto;
+    
+}
+.choices_show{
+    display: block !important;
+}
+.eat_choice{
+    width: 40%;
+    height: 40%;
+    z-index: 10001;
+    position: fixed;
+    top: 27%;
+    left: 7%;
+    background: rgb(0 255 255 / 25%);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    text-align: center;
+    display: table;
+    cursor: pointer;
+}
+.eat_2{
+    height: 100%;
+    vertical-align: middle;
+    display: table-cell;
+}
+.sing_choice{
+    width: 40%;
+    height: 40%;
+    z-index: 10001;
+    position: fixed;
+    top: 27%;
+    right: 7%;
+    background: rgb(0 255 255 / 25%);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    text-align: center;
+    display: table;
+    cursor: pointer;
+}
+.sing_2{
+    height: 100%;
+    vertical-align: middle;
+    display: table-cell;
+}
+/* 吃饭选择器 */
+.choices_eat_show{
+    width:15%;
+    z-index: 1005;
+    display: none;
+    position: fixed;
+    height: 20%;
+    right: 40%;
+    background: rgba(230, 122, 122, 0.25);
+    backdrop-filter: blur(10px);
+    top: 40%;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: auto;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.choices_eat_block{
+    display: flex !important; 
+}
+.choices_meau_left{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.choices_meau_right{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+/* 唱歌选择器 */
+.choices_sing_show{
+    width:10%;
+    z-index: 1005;
+    display: none;
+    position: fixed;
+    height: 5%;
+    right: 40%;
+    background: rgba(87, 43, 220, 0.25);
+    backdrop-filter: blur(10px);
+    top: 40%;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: auto;
+}
+.sing_show{
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    font-size: 24px;
+}
+.choices_sing_block{
+    display: flex !important;
+}

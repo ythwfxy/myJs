@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./node_modules/aplayer/dist/APlayer.min.css">
+    <script src="./node_modules/aplayer/dist/APlayer.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 背景图片 -->
+    <div class="bg-all">
+        <img id="bg" onerror="this.classList.add('error');" src="./img/background2.jpg"></img>
+        <div class="cover"></div>
+    </div>
+    <!-- 图Biao区域 -->
+    <div class="icons">
+        <!-- 图片 -->
+        <div class="imgs">
+            <img src="./img/logo.png" alt="">
+        </div>
+    </div>
+    <!-- 介绍区域 -->
+    <div class="introduction intro">
+        <div class="intro_container">
+            <span class="intro_content1">Hello 欢迎来到我的主页</span><br />
+            <span class="intro_content2">今天也要加油啊</span>
+        </div>
+    </div>
+    <div class="about">
+        <a href="https://github.com/ythwfxy?tab=repositories" id="github" target="_blank">
+            <i class="iconfont icon-github"></i>
+        </a>
+        <a href="http://wpa.qq.com/msgrd?v=3&uin=1832164480&site=qq&menu=yes" id="qq" target="_blank">
+            <i class="iconfont icon-QQ-circle-fill"></i>
+            <a>
+                <a href="mailto:1832164480@qq.com" id="email" target="_blank">
+                    <i class="iconfont icon-youjian_o"></i>
+                </a>
+    </div>
+    <!-- 功能区 -->
+    <div class="infor">
+        <div class="onetalk introduction">
+            <div class="onetalk_content"><span id="onetalk_cont">尝试穿上草鞋，飞一般的感觉</span></div>
+            <div class="onetalk_author">-&nbsp;[&nbsp;<span id="onetalk_auth">刘备</span>&nbsp;]&nbsp;</div>
+        </div>
+        <div class="times introduction">
+            <div class="time"><span>2000&nbsp;年&nbsp;0&nbsp;月&nbsp;00&nbsp;日&nbsp;</span>
+                <span class="week">星期六</span>
+            </div>
+            <div class="time_show_c">
+                <span class="time_show">00:00:00</span>
+            </div>
+            <div class="weather">
+                <span class="weather_left">天气</span>&nbsp;
+                <span class="weather_right">加载中</span>&nbsp;
+                <span class="tem_low"></span>℃~
+                <span class="tem_high"></span>℃
+            </div>
+        </div>
+    </div>
+    <div class="mass">
+        <div class="first_row">
+            <div class="music introduction item"><i class="iconfont icon-yinle"></i><span>音乐</span></div>
+            <div class="think introduction item"><i class="iconfont icon-41shuoshuo"></i><span>说说</span></div>
+            <div class="choice introduction item"><i class="iconfont icon-choujiang"></i><span>选择器</span></div>
+        </div>
+        <div class="second_row">
+            <div class="photo introduction item"><i class="iconfont icon-tupian"></i><span>图片</span></div>
+            <div class="friend introduction item"><i class="iconfont icon-pengyou"></i><span>邻居</span></div>
+            <div class="other introduction item"><i class="iconfont icon-qita"></i><span>其他</span></div>
+        </div>
+    </div>
+    <!-- 音乐 -->
+    <div class="mus">
+        <!-- Aplayer -->
+        <div id="aplayer"></div>
+    </div>
+    <!-- 说说 -->
+    <div class="com">
+        <div class="com_close fixed-top"><i class="iconfont icon-guanbi" id="close"></i></div>
+        <div content_more>
+            <div class="content_all">
+                <div class="content"><span id="content_w">你好</span></div>
+                <div class="content_time"><span id="content_t">2022-7-7</span></div>
+            </div>
+        </div>
+        <div class="com_in">
+            <input class="com_input" type="text">
+            <div class="com_input_but"><span>发布</span></div>
+        </div>
+    </div>
+    <!-- 选择器 -->
+    <div class="choices">
+        <div class="com_close fixed-top"><i class="iconfont icon-guanbi" id="close2"></i></div>
+        <div class="eat_choice">
+            <div class="eat_2"><span>吃饭选择器</span></div>
+        </div>
+        <div class="sing_choice">
+            <div class="sing_2"><span>唱歌选择器</span></div>
+        </div>
+    </div>
+    <!-- 吃饭选择器 -->
+    <div class="choices_eat_show">
+        <div class="com_close fixed-top"><i class="iconfont icon-guanbi" id="close3"></i></div>
+        <div class="choices_meau_left">
+            <div class="left_item">重庆小面</div>
+            <div class="left_item">炒米饭</div>
+            <div class="left_item">一楼八大菜系</div>
+            <div class="left_item">二楼八大菜系</div>
+            <div class="left_item">泡面</div>
+        </div>
+        <div class="choices_meau_right">
+            <div class="right_item">麻汁面</div>
+            <div class="right_item">卤肉饭</div>
+            <div class="right_item">石锅饭</div>
+            <div class="right_item">拉面</div>
+            <div class="right_item">奢侈一把</div>
+        </div>
+    </div>
+    <!-- 唱歌选择器 -->
+    <div class="choices_sing_show">
+        <div class="com_close fixed-top"><i class="iconfont icon-guanbi" id="close4"></i></div>
+        <div class="sing_show"><span id="sing">你好</span></div>
+    </div>
+    <!-- 其他：更换壁纸 -->
+
+
+    <script src="./js/api.js"></script>
+    <script type="module" src="./js/music.js"></script>
+    <script src="./js/index.js"></script>
+
+</html>
